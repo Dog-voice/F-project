@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<!-- 사용자 스크립트 -->
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        function page(page) {
+            var searchCategory = $("#searchCategory").val();
+
+            location.href="/store/items/" + "&searchCategory=" + searchCategory;
+        }
+    </script>
+</th:block>
+<body>
+<div class="header" th:fragment="header">
+
+    <div class="first-container">
+        <div class="first-menu-container">
+
+            <div class="mainlogo">
+                <a class="logo" href="/" aria-label="오늘의디저트로고" >
+                    <img src="/img/오늘의 디저트 로고.png">
+
+                    </img>
+                </a>
+            </div>
+            <div class="menu-left">
+                <ul>
+                    <li sec:authorize="isAnonymous()">
+                        <a href="/members/login">로그인</a>
+                    </li>
+                    <li sec:authorize="isAnonymous()">
+                        <a href="/members/new">회원가입</a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/members/logout">로그아웃</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbox">
+                <form class="form-inline my-2 my-lg-0" th:action="@{/}" method="get">
+                    <input name="searchQuery" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/orders">구매 이력</a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <a href="/cart">장바 구니</a>
+                    </li>
+                    <li sec:authorize="hasRole('ROLE_STORE')">
+                        <a href="/store/item/new">상품 등록</a>
+                    </li>
+                    <li sec:authorize="hasRole('ROLE_STORE')">
+                        <a href="/store/items">상품 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!--<img class="hero_header" src="/img/cc.jpg">-->
+<div class="second-container">
+    <div class="second-menu-container1">
+        <div class="menu">
+            <a href="/macaron">
+                <img class="macaron" src="/img/마카롱.jpg">
+                <span class="menu1">마카롱</span>
+            </a>
+        </div>
+
+            <div class="menu">
+                <a href="/scone">
+                    <img class="macaron" src="/img/스콘.jpg">
+                    <span class="menu1">스콘</span>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="/cookies">
+                    <img class="macaron" src="/img/쿠키.jpg">
+                    <span class="menu1">쿠키</span>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="/butterbar">
+                    <img class="macaron" src="/img/버터바.jpg">
+                    <span class="menu1">버터바</span>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="/financier">
+                    <img class="macaron" src="/img/휘낭시에.jpg">
+                    <span class="menu1">휘낭시에</span>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="/cannele">
+                    <img class="macaron" src="/img/까눌레.jpg">
+                    <span class="menu1">까눌레</span>
+                </a>
+            </div>
+
+
+            <div class="menu">
+                <a href="/vegan">
+                    <img class="macaron" src="/img/비건.jpg">
+                    <span class="menu1">비건</span>
+                </a>
+            </div>
+
+
+
+
+
+    </div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@font-face {
+font-family: 'UhBeemysen';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeemysen.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'UhBeemysen';
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*overflow-x: hidden; x축 여백 없애기*/
+}
+.content{
+    width: 80%;
+    margin: 0;
+    margin-left: 10%;
+}
+.content .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:100px 0;
+}
+.content .row .card{
+    text-align: center;
+
+}
+.content .row .card a{
+    color: black;
+    text-decoration: none;
+}
+.content .row .card a:hover{
+    text-decoration: none;
+}
+.content .row .card .card-img-top{
+    height:250px;
+    width:250px;
+    margin-left: 15px;
+}
+.content .row .card .card-body{
+}
+.content .page{
+    height: 60px;
+    text-align:center;
+
+}
+.content ul{
+    padding-left: 45%;
+    height:100%;
+    list-style: none;
+    text-align: center;
+
+}
+.content ul li{
+    float: left;
+    margin: 0 10px;
+}
+.content ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.content .slideshow-container{
+  margin-top: 30px;
+  width: 100%;
+
+
+}
+.content .slideshow-container img{
+  height: 350px;
+  width: 100%;
+}
+
+
+.content .slideshow-container .text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.content .slideshow-container .number-tex{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.content .slideshow-container .dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.content .slideshow-container .active{
+  background-color: #717171;
+}
+

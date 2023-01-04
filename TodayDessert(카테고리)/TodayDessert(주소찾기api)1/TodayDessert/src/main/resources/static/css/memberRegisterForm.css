@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'UhBeemysen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeemysen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'UhBeemysen';
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 50%;
+    margin: 10% 0;
+    margin-left: 25%;
+    text-align: center;
+
+}
+.content .mb-3{
+
+}
+.content .mb-3 label{
+
+}
+.content .mb-3 .form-control{
+
+    padding-left: 10px;
+}
+.content .form-check-input{
+
+}
+.content button{
+    font-size: 20px;
+}

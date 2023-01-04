@@ -1,0 +1,153 @@
+@font-face {
+font-family: 'UhBeemysen';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeemysen.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'UhBeemysen';
+}
+body {
+  margin: 0;
+  min-width: 992px;
+
+}
+.first-container{
+  height: 60px;
+  padding-left: 30px;
+
+
+}
+.searchbox{
+    line-height: 60px;
+    float: right;
+
+    margin-top: 25px;
+}
+.first-container .first-menu-container .mainlogo .logo{
+    font-size: 30px;
+}
+
+.logo{
+  float: left;
+  padding-top:1.5%;
+}
+.first-container ul{
+  float: right;
+
+  line-height: 60px;
+  margin-top: 25px;
+}
+
+.first-container li{
+
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+}
+
+.first-container a{
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  font-size: 18px;
+}
+.products {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 740px;
+  text-align: center;
+}
+
+.products img{
+  width: 225px;
+  height: 225px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products a{
+  text-decoration: none;
+  color: black;
+  float: left;
+  font-size: 16px;
+}
+
+.price{
+  margin-top: 4px;
+  margin-bottom: 80px;
+}
+
+.clearfix{
+  clear: both;
+}
+.second-container{
+
+    color: #424242;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    font-size: 13px;
+    -webkit-box-direction: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    padding-left: 9.5%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+}
+.second-menu-container1{
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    font-size: 13px;
+    -webkit-box-direction: normal;
+    width: 88.5%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 16px 5px 20px;
+
+}
+.menu{
+line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    font-size: 13px;
+    -webkit-box-direction: normal;
+    text-align: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: transparent;
+    width: 100%;
+
+
+
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+.menu1{
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -.4px;
+    -webkit-box-direction: normal;
+    text-align: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border: none;
+    display: block;
+    margin-top: 8px;
+    font-size: 17px;
+    line-height: 16px;
+}
+.macaron{
+    border-radius : 50%;
+    height:110px;
+    width:110px;
+}
+
+
+
+
