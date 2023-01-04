@@ -1,0 +1,48 @@
+* CMD *
+
+1. sqlplus
+
+2.  오라클 계정 접속
+
+3. 유저 아이디 비밀번호 생성
+
+4. 권한 부여하기 . 
+
+Microsoft Windows [Version 10.0.19044.2130]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EZEN-25>sqlplus
+
+SQL*Plus: Release 11.2.0.2.0 Production on 화 11월 8 10:26:14 2022
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+Enter user-name: system
+Enter password:
+
+Connected to:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+SQL> create user project identified by project 1234;
+create user project identified by project 1234
+                                          *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create user project identified by project1234;
+
+User created.
+
+SQL> grant connect, resources, dba to project;
+grant connect, resources, dba to project
+               *
+ERROR at line 1:
+ORA-01919: role 'RESOURCES' does not exist
+
+
+SQL> grant connect, resource, dba to project;
+
+Grant succeeded.
+
+SQL>

@@ -1,0 +1,30 @@
+board 게시판 만들기   examworkspace 생성 후 작업.
+
+제출 examworkspace 압축 후 miran5093@gmail.com 으로 전송
+
+찹축파일명은 본인 이름
+
+게시판의 기본 칼럼에 point 점수 추가하여 게시판 생성
+
+database testdb2 생성하고 , board 생성
+
+bno - int
+title - varchar
+writer - varchar
+reg_date - datetime
+point - int
+content - text로 구성   다른필요한 속성 알아서 추가
+
+
+- 개발 환경 운영 지원 = > 2022-06-17
+
+
+
+create table board(
+bno int not null auto_increment,
+title varchar(100) not null,
+writer varchar(100) not null,
+content text,
+reg_date datetime default current_timestamp,
+point int not null,
+primary key(bno));
